@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--Bottom sheet style-->
+    <style name="BaseBottomSheet" parent="Widget.Design.BottomSheet.Modal">
+        <item name="background">@drawable/sheet_shape</item>
+    </style>
+    <style name="RoundedBottomSheetDialog" parent="@style/Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BaseBottomSheet</item>
+
+        <!--these three lines need to not allow sheet be covered by keyboard: -->
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">#00000000</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+
+</resources>
